@@ -3,30 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Landing Page</title>
+    <title>Advanced Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
 
-    <nav id="navbar">
+    <nav id="navbar" class="navbar">
         <div class="logo">PRODIGY</div>
+
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 
-    <section class="hero">
-        <h1>Welcome to My Landing Page</h1>
-        <p>Responsive navigation menu with scroll & hover effects</p>
+    <section id="home" class="hero">
+        <h1>Welcome to PRODIGY</h1>
+        <p>Advanced responsive navigation with scroll effects, hover animations, and mobile support</p>
     </section>
 
-    <section class="content">
-        <h2>Scroll Down</h2>
-        <p>This section is added to test scroll behavior.</p>
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>Scroll down to see the navbar change on scroll and hover effects in action.</p>
+        <div style="height: 1000px;"></div>
+    </section>
+
+    <section id="services" class="content" style="background:#f8f9fa;">
+        <h2>Our Services</h2>
+        <p>Keep scrolling...</p>
         <div style="height: 800px;"></div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>You've reached the end!</p>
     </section>
 
     <script src="script.js"></script>
